@@ -3,7 +3,7 @@
 # # # # # # # #
 
 # Basic
-name:               "Ian"
+name:               "Kiko"
 
 # URL
 baseurl:            ""
@@ -15,8 +15,10 @@ markdown:           rdiscount
 
 # Navigation
 nav:
-  - name:           "Github"
-    href:           "//github.com/ianhi"
+  - name:           "About"
+    href:           "//kiko.gfjaru.com/about"
+  - name:           "Download"
+    href:           "//github.com/gfjaru/Kiko/releases"
 
 # Sass
 sass:
