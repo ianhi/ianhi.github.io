@@ -6,22 +6,10 @@ title: Example content
 ## Lorem
 Quisque sodales euismod nibh, gravida venenatis nibh dignissim eget. Morbi gravida enim vel lectus aliquet aliquet.
 
-### Ipsum
-Nunc nec aliquam tellus. Etiam faucibus magna nibh, ut fermentum velit consectetur id. Nullam vehicula iaculis tortor, in cursus enim auctor vitae. Duis semper pulvinar justo, at vestibulum dolor. Cras fermentum nibh quis nisl imperdiet ornare. Sed nisi nunc, dictum sit amet gravida in, finibus rhoncus orci. Donec scelerisque commodo turpis ac venenatis.
 
-> Nam vitae commodo ex. Nunc vel tellus leo.
-
-## Dugem
-Nullam vehicula iaculis tortor, in cursus enim auctor vitae. Duis semper pulvinar justo, at vestibulum dolor. Cras fermentum nibh quis nisl imperdiet ornare. Sed nisi nunc, dictum sit amet gravida in, finibus rhoncus orci. Donec scelerisque commodo turpis ac venenatis.
-
-
-function trigger_alert(){
-  alert("Lorem Ipsum dolor sit amet");
-}
-
-trigger_alert();
-
-
+### Rendering MathJax
+\\[ a^2 +\theta \\]
+$$ a^2 + b^2 = c^2 $$
 
 <link
     href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css"
@@ -64,7 +52,7 @@ Cras fermentum nibh quis nisl imperdiet ornare. Sed nisi nunc, dictum sit amet g
 2. Cum sociis natoque penatibus.
 3. Maecenas sed diam eget risus.
 
-Nam ante lacus, ornare ut lacus in, aliquet gravida orci. Donec non dignissim elit. Integer facilisis lorem sed porttitor elementum. Etiam a eleifend justo. 
+Nam ante lacus, ornare ut lacus in, aliquet gravida orci. Donec non dignissim elit. Integer facilisis lorem sed porttitor elementum. Etiam a eleifend justo.
 
 <dl>
   <dt>HyperText Markup Language (HTML)</dt>

@@ -8,10 +8,10 @@ name:               "Ian"
 # URL
 baseurl:            ""
 #baseurl:            "" #For Root Domain
-permalink:          /:year/:month/:day/:title.html
+permalink:         :title.html
 
 # Markdown
-markdown:           rdiscount
+markdown: redcarpet
 
 # Navigation
 nav:
