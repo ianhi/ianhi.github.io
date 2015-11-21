@@ -5,7 +5,10 @@ title: Example content
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper est in imperdiet molestie. Curabitur aliquet sem in ante venenatis.</p>
 ## Lorem
 Quisque sodales euismod nibh, gravida venenatis nibh dignissim eget. Morbi gravida enim vel lectus aliquet aliquet.
-
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css"
+    rel="stylesheet" type="text/css">
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
 
 ### Rendering MathJax
 \\[ a^2 +\theta \\]
