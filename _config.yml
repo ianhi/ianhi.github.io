@@ -6,7 +6,7 @@
 name:               "Ian"
 
 # URL
-baseurl:            "/project-name"
+baseurl:            ""
 #baseurl:            "" #For Root Domain
 permalink:         :title.html
 
