@@ -11,12 +11,14 @@ baseurl:            ""
 permalink:         :title.html
 
 # Markdown
-markdown: redcarpet
+markdown:           redcarpet
 
 # Navigation
 nav:
   - name:           "Github"
     href:           "//github.com/ianhi"
+  - name:           "CV"
+    href:           {{site.baseurl}}"CV.pdf"
 
 # Sass
 sass:
