@@ -33,9 +33,26 @@
 
 &lt;div class=&quot;plotdiv&quot; id=&quot;d22f30b2-43bb-4543-b732-7d387f2d017e&quot;&gt;&lt;/div&gt;
 </description>
-				<pubDate>Fri, 20 Nov 2015 00:00:00 -0500</pubDate>
+				<pubDate>Sat, 21 Nov 2015 00:00:00 -0500</pubDate>
 				<link>/RedChiSq.html</link>
 				<guid isPermaLink="true">/RedChiSq.html</guid>
+			</item>
+		
+			<item>
+				<title>Whats Jekyll?</title>
+        <description>&lt;p class=&quot;lead&quot;&gt; &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 20 Nov 2015 00:00:00 -0500</pubDate>
+				<link>/whats-jekyll.html</link>
+				<guid isPermaLink="true">/whats-jekyll.html</guid>
 			</item>
 		
 			<item>
@@ -146,23 +163,6 @@ Quisque sodales euismod nibh, gravida venenatis nibh dignissim eget. Morbi gravi
 				<pubDate>Sun, 09 Aug 2015 00:00:00 -0400</pubDate>
 				<link>/example-content.html</link>
 				<guid isPermaLink="true">/example-content.html</guid>
-			</item>
-		
-			<item>
-				<title>Whats Jekyll?</title>
-        <description>&lt;p class=&quot;lead&quot;&gt; &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.&lt;/p&gt;
-
-&lt;p&gt;From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-				<pubDate>Sat, 08 Aug 2015 00:00:00 -0400</pubDate>
-				<link>/whats-jekyll.html</link>
-				<guid isPermaLink="true">/whats-jekyll.html</guid>
 			</item>
 		
 	</channel>
