@@ -12,14 +12,15 @@ permalink:         :title.html
 
 # Markdown
 #markdown:           redcarpet  - this works better for latex but worse for bokeh plots
-markdown:           rdiscount
+#markdown:           rdiscount  - supports bokeh but not easy latex
+markdown:           kramdown
 
 # Navigation
 nav:
   - name:           "Github"
     href:           "//github.com/ianhi"
   - name:           "CV"
-    href:           "ianhi.github.io/CV.pdf"
+    href:           "/CV.pdf"
 
 # Sass
 sass:
