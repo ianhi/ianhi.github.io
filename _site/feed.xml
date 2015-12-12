@@ -8,10 +8,14 @@
 			<item>
 				<title>p5.js !!</title>
         <description>&lt;h1 id=&quot;hi-yidi&quot;&gt;Hi Yidi!&lt;/h1&gt;
-&lt;head&gt;&lt;script src=&quot;javascript/sketch.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;
+
 &lt;p&gt;Learning how to use &lt;a href=&quot;p5js.org&quot;&gt;P5.js&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Hopefully a random walk based on perlin noise should appear below. Watch it for awhile to see some cool shapes.&lt;/p&gt;
+&lt;p&gt;Hopefully a random walk based on perlin noise should appear below. Watch it for awhile to see some cool shapes.
+Click to reset the thing.&lt;/p&gt;
+
+&lt;script src=&quot;javascript/sketch.js&quot;&gt;&lt;/script&gt;
+
 </description>
 				<pubDate>Fri, 11 Dec 2015 00:00:00 -0500</pubDate>
 				<link>/p5Post.html</link>
