@@ -20,7 +20,7 @@ nav:
   - name:           "Github"
     href:           "//github.com/ianhi"
   - name:           "CV"
-    href:           "/CV.pdf"
+    href:           "/files/CV.pdf"
 
 # Sass
 sass:
