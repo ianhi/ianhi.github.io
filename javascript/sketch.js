@@ -4,9 +4,8 @@ var totalWalkers = 0;
 var colorScheme = 0;
 
 function setup() {
-    var width = document.getElementById('foo').offsetWidth;
-    println(width);
-    var myCanvas = createCanvas(windowWidth * .45, 600);
+    var width = document.getElementById('content').offsetWidth;
+    var myCanvas = createCanvas(width, 600);
     println(1 / sqrt(2));
     println(windowWidth / sqrt(2));
     myCanvas.parent('myContainer');
@@ -129,7 +128,8 @@ function saveWithName() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth * .45, height);
+    var width = document.getElementById('content').offsetWidth;
+    resizeCanvas(width, height);
     background(50, 89, 100);
     for(i=0;i<walkers.length;i++){
         if(walkers[i].x>width){

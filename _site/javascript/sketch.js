@@ -5,7 +5,6 @@ var colorScheme = 0;
 
 function setup() {
     var width = document.getElementById('content').offsetWidth;
-    println(width);
     var myCanvas = createCanvas(width, 600);
     println(1 / sqrt(2));
     println(windowWidth / sqrt(2));
