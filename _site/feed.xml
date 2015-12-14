@@ -7,7 +7,7 @@
 		
 			<item>
 				<title>p5.js !!</title>
-        <description>&lt;p&gt;Learning how to use &lt;a href=&quot;p5js.org&quot;&gt;P5.js&lt;/a&gt;  &lt;/p&gt;
+        <description>&lt;p&gt;Learning how to use &lt;a href=&quot;http://www.p5js.org&quot;&gt;P5.js&lt;/a&gt;  &lt;/p&gt;
 
 &lt;p&gt;Below is a random walker using &lt;a href=&quot;http://freespace.virgin.net/hugo.elias/models/m_perlin.htm&quot;&gt;perlin noise&lt;/a&gt; to determine step size. Watch it for awhile to see some cool shapes.&lt;br /&gt;
 Click to reset the thing. Spacebar to save the image.&lt;/p&gt;

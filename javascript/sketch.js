@@ -4,6 +4,8 @@ var totalWalkers = 0;
 var colorScheme = 0;
 
 function setup() {
+    var width = document.getElementById('foo').offsetWidth;
+    println(width);
     var myCanvas = createCanvas(windowWidth * .45, 600);
     println(1 / sqrt(2));
     println(windowWidth / sqrt(2));
