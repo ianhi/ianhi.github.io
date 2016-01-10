@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ian</title>
+  <title>ProcessingJS</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" type="text/css" />
@@ -39,67 +39,32 @@
 <body>
   <div class="container">
     <header class="masthead">
-  <h1 class="masthead-title">
-    <a href="/">Ian<span></span></a>
+  <h1 class="masthead-title--small">
+    <a href="/">Ian</a>
   </h1>
-  <nav class="masthead-nav">
-    
-    <a href="//github.com/ianhi">Github</a>
-    
-    <a href="/files/CV.pdf">CV</a>
-    
-  </nav>
 </header>
-<div class="content list">
-
-
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/processingJS.html">ProcessingJS</a>
-    </h2>
-    <div class="list-post-date">
-      <time>10 Jan 2016</time>
-    </div>
+<div class="content post" id="content">
+  <h1 class="post-title">ProcessingJS</h1>
+  <div class="post-date">
+    <time>10 Jan 2016</time>
   </div>
+  <p>Proof that I can integrate <a href="http://www.processingjs.org">ProcessingJS</a> and jekyll easily.</p>
 
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/p5Post.html">p5.js !!</a>
-    </h2>
-    <div class="list-post-date">
-      <time>11 Dec 2015</time>
-    </div>
-  </div>
+<p>Below is an interesting thing with circles.
+Controls are:</p>
 
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/RedChiSq.html">$\tilde{\chi}^2$ vs Histogram binning</a>
-    </h2>
-    <div class="list-post-date">
-      <time>21 Nov 2015</time>
-    </div>
-  </div>
+<p>r: Each ring has a random growth rate<br />
+space: clear screen<br />
+s: save image  </p>
 
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/whats-jekyll.html">Whats Jekyll?</a>
-    </h2>
-    <div class="list-post-date">
-      <time>20 Nov 2015</time>
-    </div>
-  </div>
-
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/example-content.html">Example content</a>
-    </h2>
-    <div class="list-post-date">
-      <time>09 Aug 2015</time>
-    </div>
-  </div>
-
+<p>One major downside of using processingJS instead of p5.js is the inability to resize the canvas. But I think this is at least partially compensated by the fact that I can just use my original processing sketch instead of porting it to javascript.
+<canvas data-processing-sources="files/shouldaPutARingOnIt.pde"></canvas></p>
 
 </div>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" type="text/css" />
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+<script src="javascript/processing.min.js"></script>
 
     <div id='myContainer'></div>
     <div id='myContainer2'></div>

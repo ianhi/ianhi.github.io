@@ -2,16 +2,19 @@
 
 Ring[] rings; // Declare the array
 int numRings = 100;
-int currentRing = 0; 
+int currentRing = 0;
 boolean rand=false;
 
 void setup() {
-  //size(600, 600);
+  size(800, 600);
   rings = new Ring[numRings]; // Create the array
   for (int i = 0; i < rings.length; i++) {
     rings[i] = new Ring(); // Create each object
   }
-  fullScreen();
+  //fullScreen();
+
+  textSize(32);
+  frameRate(30); // if allowed to default to 60 fps it grows too fast
 }
 void draw() {
   background(0);
@@ -19,6 +22,7 @@ void draw() {
     rings[i].grow();
     rings[i].display();
   }
+  text(str(frameRate),0,height-2);
 }
 // Click to create a new Ring
 void mousePressed() {
@@ -39,6 +43,8 @@ void keyPressed() {
     }
   } else if (key == 'r'){
     rand = !rand;
+  } else if (key == 's'){
+    save("rings-"+year()+"-"+month()+"-"+day()+"-"+hour()+"-"+minute()+"-"+second()+".png")
   }
 }
 class Ring {
@@ -49,12 +55,12 @@ class Ring {
 
   void start(float xpos, float ypos) {
     x = xpos;
-    y = ypos; 
+    y = ypos;
     rate = random(1,50);
     diameter = 1;
     on = true;
   }
-  
+
   void grow() {
     if (on == true) {
       if(rand) diameter += 0.5*rate;

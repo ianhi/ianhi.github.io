@@ -6,6 +6,25 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>ProcessingJS</title>
+        <description>&lt;p&gt;Proof that I can integrate &lt;a href=&quot;http://www.processingjs.org&quot;&gt;ProcessingJS&lt;/a&gt; and jekyll easily.&lt;/p&gt;
+
+&lt;p&gt;Below is an interesting thing with circles.
+Controls are:&lt;/p&gt;
+
+&lt;p&gt;r: Each ring has a random growth rate&lt;br /&gt;
+space: clear screen&lt;br /&gt;
+s: save image  &lt;/p&gt;
+
+&lt;p&gt;One major downside of using processingJS instead of p5.js is the inability to resize the canvas. But I think this is at least partially compensated by the fact that I can just use my original processing sketch instead of porting it to javascript.
+&lt;canvas data-processing-sources=&quot;files/shouldaPutARingOnIt.pde&quot;&gt;&lt;/canvas&gt;&lt;/p&gt;
+</description>
+				<pubDate>Sun, 10 Jan 2016 00:00:00 -0500</pubDate>
+				<link>/processingJS.html</link>
+				<guid isPermaLink="true">/processingJS.html</guid>
+			</item>
+		
+			<item>
 				<title>p5.js !!</title>
         <description>&lt;p&gt;Learning how to use &lt;a href=&quot;http://www.p5js.org&quot;&gt;P5.js&lt;/a&gt;  &lt;/p&gt;
 
