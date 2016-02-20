@@ -1,42 +1,43 @@
-# # # # # # # #
-#   K i k o   #
-# # # # # # # #
+# Title of your blog; shows in the header
+name: "ianhi"
 
-# Basic
-name:               "Ian"
+# Description of your content (will only be used on Google Search)
+description:  "The thoughts of Ian Hunt-Isaak"
 
-# URL
-baseurl:            ""
-#baseurl:            "" #For Root Domain
-permalink:         :title.html
+# Your name. Will show in your footer + sidebar
+author: "Ian Hunt-Isaak"
 
-# Markdown
-#markdown:           redcarpet  - this works better for latex but worse for bokeh plots
-#markdown:           rdiscount  - supports bokeh but not easy latex
-markdown:           kramdown
+#url:  "http://ianhi.github.io"
+baseurl:  ""
+permalink: :title/
 
-# Navigation
-nav:
-  - name:           "Github"
-    href:           "//github.com/ianhi"
-  - name:           "CV"
-    href:           "/files/CV.pdf"
 
-# Sass
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
+author-bio: "I'm a Physics major at Oberlin college interested in generative art and data visualization."
+
+# Social Accounts (mine, as placeholders)
+twitter:
+github: ianhi
+linkedin: ianhi
+CV: CV.pdf
+dribbble:
+instagram:
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+
+ga_domain: ianhi.github.io
+ga_tracking_id:
+
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
+
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# SCSS
 sass:
-  style:            :compressed
-
-# Scopes
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
+  sass_dir: _scss
+  style: :compressed
