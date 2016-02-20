@@ -18,7 +18,7 @@ author-bio: "I'm a Physics major at Oberlin college interested in generative art
 # Social Accounts (mine, as placeholders)
 twitter:
 github: ianhi
-linkedin: ianhi
+linkedin: ian-hunt-isaak-4a5498111
 CV: CV.pdf
 dribbble:
 instagram:
@@ -26,7 +26,7 @@ instagram:
 # Google Analytics (you may want to changes these with yours or even delete :)
 
 ga_domain: ianhi.github.io
-ga_tracking_id:
+ga_tracking_id: UA-70410040-1
 
 # Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
 
