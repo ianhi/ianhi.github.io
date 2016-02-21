@@ -4,7 +4,7 @@
   <id></id>
   <link href="" />
   <link href="/atom.xml" rel="self" />
-  <updated>2016-02-21T03:52:53-05:00</updated>
+  <updated>2016-02-21T04:23:15-05:00</updated>
   <rights>Copyright 2014, Ian Hunt-Isaak</rights>
   <author>
     <name>Ian Hunt-Isaak</name>
@@ -16,13 +16,13 @@
       <summary type="html">&lt;p&gt;Proof that I can integrate &lt;a href=&quot;http://www.processingjs.org&quot;&gt;ProcessingJS&lt;/a&gt; and jekyll easily.&lt;/p&gt;
 
 &lt;p&gt;Below is an interesting thing with circles.
-Controls are:&lt;/p&gt;
+You use the mouse &lt;code&gt;(&lt;/code&gt;clicking or dragging&lt;code&gt;)&lt;/code&gt; to generate circles. Other controls are:&lt;/p&gt;
 
 &lt;p&gt;r: Each ring has a random growth rate&lt;br /&gt;
 space: clear screen&lt;br /&gt;
 s: save image  &lt;/p&gt;
 
-&lt;p&gt;One major downside of using processingJS instead of p5.js is the inability to resize the canvas. But I think this is at least partially compensated by the fact that I can just use my original processing sketch instead of porting it to javascript.
+&lt;p&gt;One major downside of using processingJS instead of p5.js is the inability to resize the canvas. But I think this is at least partially compensated by the fact that I can just use my original processing sketch instead of porting it to javascript. The sketch it self can be found &lt;a href=&quot;/assets/files/shouldaPutARingOnIt.pde&quot;&gt;here&lt;/a&gt; or &lt;a href=&quot;https://github.com/ianhi/processing/blob/master/shouldaPutARingOnIt/shouldaPutARingOnIt.pde&quot;&gt;here&lt;/a&gt;&lt;br /&gt;
 &lt;canvas data-processing-sources=&quot;/assets/files/shouldaPutARingOnIt.pde&quot;&gt;&lt;/canvas&gt;&lt;/p&gt;
 </summary>
       <id>/proccessingJS</id>
@@ -57,9 +57,11 @@ Click to reset the thing. Spacebar to save the image.&lt;/p&gt;
     <entry>
       <title>$\tilde{\chi}^2$ vs Histogram binning</title>
       <link href="/RedChiSq" />
-      <summary type="html">&lt;p&gt;plot of the the dependence of the reduced chi sq for a fit of muon data on how I bin the histogram. Properly choosing initial guess and eliminating the first bin when it was a problem dramatically reduced discontinuities in the data.&lt;/p&gt;
+      <summary type="html">&lt;p&gt;In my intermediate physics lab course I did an experiment in which we attempted to determine the lifetime of a Muon using a table top detector. We can detect both when Muon’s enter the dectector and when they decay in the detector. So we wait for Muons to decay while inside our detector and making a histogram of decay times and fit this to an exponential decay model. &lt;/p&gt;
 
-&lt;p&gt;The python notebook used for the analysis can be seen &lt;a href=&quot;/files/Muon_Analysis.html&quot;&gt;here&lt;/a&gt;
+&lt;p&gt;While doing this I noticed that simply chaning my historgram bin size could have a large effect on my result and so wrote some python loops to test out multiple bin sizes. In doing so I ended up coming up with a better scheme for rejecting the suspect first few bins and choosing initial guess which helped reduce the variability in the final values. Nonetheless it is important to keep in mind that histogramming necssarily distorts your data as is hinted at in the plot below. This is a plot of the $\tilde{\chi}^2$ for my fits vs the number of bins &lt;code&gt;(&lt;/code&gt;inverse of bin size&lt;code&gt;)&lt;/code&gt;. I went to the trouble of making this plot nice and interactive and having a website seemed the easiest solution to share it with my professor and so now I have a website.  &lt;/p&gt;
+
+&lt;p&gt;The python notebook used for the analysis can be seen &lt;a href=&quot;/assets/files/Muon_Analysis.html&quot;&gt;here&lt;/a&gt;
 &lt;link href=&quot;http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
 &lt;script src=&quot;http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js&quot;&gt;&lt;/script&gt;
              &lt;script type=&quot;text/javascript&quot;&gt;
