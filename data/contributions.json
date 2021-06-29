@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+        "name":"ipympl",
+        "url":"https://github.com/matplotlib/ipympl",
+        "desc":"Maintainer"
+    },
+    { 
+        "name":"jupyterlab-vim",
+        "url":"https://github.com/axelfahy/jupyterlab-vim",
+        "desc":"Maintainer"
+    },
+    {
+        "name":"ipycytoscape",
+        "url":"https://github.com/cytoscape/ipycytoscape",
+        "desc":"Maintainer"
+    },
+    {
+        "name":"ipywidgets",
+        "url":"https://github.com/jupyter-widgets/ipywidgets",
+        "desc":"Maintainer"
+    },
+    {
+        "name":"matplotlib",
+        "url":"https://github.com/matplotlib/matplotlib",
+        "desc":"Contributor"
+    }
+  ]
+}

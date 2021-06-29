@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "name":"mpl-interactions",
+      "url":"https://mpl-interactions.readthedocs.io/en/stable/",
+      "desc":"A library for easily building interactive Matplotlib plots"
+    },
+    {
+      "name":"microutil",
+      "url":"https://github.com/Hekstra-Lab/microutil",
+      "desc":"A library for analyzing microscopy datasets"
+    }
+  ]
+}
