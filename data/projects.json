@@ -6,6 +6,11 @@
       "desc":"A library for easily building interactive Matplotlib plots"
     },
     {
+      "name":"mpl-point-clicker",
+      "url":"https://mpl-point-clicker.readthedocs.io/en/stable/",
+      "desc":"A multiclass point clicker for matplotlib"
+    },
+    {
       "name":"microutil",
       "url":"https://github.com/Hekstra-Lab/microutil",
       "desc":"A library for analyzing microscopy datasets"
