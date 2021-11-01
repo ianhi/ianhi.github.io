@@ -11,6 +11,11 @@
       "desc":"A multiclass point clicker for matplotlib"
     },
     {
+      "name":"mpl-image-labeller",
+      "url":"https://mpl-image-labeller.readthedocs.io/en/stable/",
+      "desc":"A tool for manually labelling images for classification."
+    },
+    {
       "name":"microutil",
       "url":"https://github.com/Hekstra-Lab/microutil",
       "desc":"A library for analyzing microscopy datasets"
