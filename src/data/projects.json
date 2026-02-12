@@ -1,24 +1,60 @@
 {
-  "list": [
+  "language_learning": [
     {
-      "name":"mpl-interactions",
-      "url":"https://mpl-interactions.readthedocs.io/en/stable/",
-      "desc":"A library for easily building interactive Matplotlib plots"
+      "name": "Minimal Pairs",
+      "desc": "A minimal pair trainer for Bangla — listen and distinguish similar sounds to build listening skills.",
+      "url": "https://ianhuntisaak.com/language-learning/minimal-pairs/",
+      "source": "https://github.com/ianhi/minimal-pairs"
     },
     {
-      "name":"mpl-point-clicker",
-      "url":"https://mpl-point-clicker.readthedocs.io/en/stable/",
-      "desc":"A multiclass point clicker for matplotlib"
+      "name": "AccentShadow",
+      "desc": "A webapp for practicing pronunciation through accent shadowing.",
+      "url": "https://github.com/ianhi/AccentShadow",
+      "source": "https://github.com/ianhi/AccentShadow"
     },
     {
-      "name":"mpl-image-labeller",
-      "url":"https://mpl-image-labeller.readthedocs.io/en/stable/",
-      "desc":"A tool for manually labelling images for classification."
+      "name": "Phrase Recorder",
+      "desc": "Record and compare phrases for language practice.",
+      "url": "https://ianhuntisaak.com/phrase-recorder/",
+      "source": "https://github.com/ianhi/phrase-recorder"
+    }
+  ],
+  "data_analysis": [
+    {
+      "name": "Cambridge Voter Analysis",
+      "desc": "Interactive analysis and visualization of voter registration data in Cambridge, MA.",
+      "url": "https://ianhi.github.io/cambridge-voter-analysis/",
+      "source": "https://github.com/ianhi/cambridge-voter-analysis"
+    }
+  ],
+  "games": [
+    {
+      "name": "BlitzTiles",
+      "desc": "A Scrabble-like word game with blitz-chess style move clocks. Peer-to-peer multiplayer via WebRTC — no accounts needed, just share a link.",
+      "url": "https://blitz-tiles-client.vercel.app",
+      "source": "https://github.com/noahhi/BlitzTiles"
+    }
+  ],
+  "visualization": [
+    {
+      "name": "viscm-web",
+      "desc": "A browser-based colormap visualization tool — inspect and evaluate colormaps for data visualization and accessibility.",
+      "url": "https://ianhuntisaak.com/viscm-web/",
+      "source": "https://github.com/ianhi/viscm-web"
+    }
+  ],
+  "dev_utilities": [
+    {
+      "name": "VAD Test Site",
+      "desc": "A small site for easily playing around with Voice Activity Detection settings.",
+      "url": "https://ianhuntisaak.com/vad-test-site/",
+      "source": "https://github.com/ianhi/vad-test-site"
     },
     {
-      "name":"microutil",
-      "url":"https://github.com/Hekstra-Lab/microutil",
-      "desc":"A library for analyzing microscopy datasets"
+      "name": "Shields Color Contrast",
+      "desc": "Test the color contrast logic used by shields.io badges.",
+      "url": "https://ianhuntisaak.com/shields-color-contrast/",
+      "source": "https://github.com/ianhi/shields-color-contrast"
     }
   ]
 }

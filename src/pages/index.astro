@@ -1,9 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SocialLinks from "../components/SocialLinks.astro";
-import ProjectList from "../components/ProjectList.astro";
-import projects from "../data/projects.json";
-import contributions from "../data/contributions.json";
 ---
 
 <BaseLayout>
@@ -30,15 +27,14 @@ import contributions from "../data/contributions.json";
     </p>
     <p class="mt-4">
       In my spare time I enjoy gardening, fixing bikes, and running. I also
-      contribute to several open source Python projects which you can read
-      about below.
+      contribute to several open source Python projects — check out my
+      <a href="/libraries/">libraries</a>,
+      <a href="/tools/">tools</a>, and
+      <a href="/projects/">projects</a>.
     </p>
 
     <div class="mt-4">
       <SocialLinks />
     </div>
   </section>
-
-  <ProjectList title="Projects" projects={projects.list} />
-  <ProjectList title="Open Source Work" projects={contributions.list} />
 </BaseLayout>

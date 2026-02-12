@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import projects from "../data/projects.json";
+
+const sections = [
+  {
+    title: "Language Learning",
+    desc: "Web apps for practicing Bangla and improving pronunciation.",
+    items: projects.language_learning,
+  },
+  {
+    title: "Visualization",
+    desc: "Tools for exploring and evaluating data visualizations.",
+    items: projects.visualization,
+  },
+  {
+    title: "Games",
+    desc: "Multiplayer browser games.",
+    items: projects.games,
+  },
+  {
+    title: "Data & Analysis",
+    desc: "Interactive data visualizations and analyses.",
+    items: projects.data_analysis,
+  },
+  {
+    title: "Dev Utilities",
+    desc: "Small browser-based tools for testing and debugging.",
+    items: projects.dev_utilities,
+  },
+];
+---
+
+<BaseLayout title="Projects">
+  <section>
+    <h1 class="text-2xl font-semibold text-rose-brand mb-6">Projects</h1>
+
+    {sections.map((section) => (
+      <div class="mb-10">
+        <h2 class="text-lg font-semibold mb-1">{section.title}</h2>
+        <p class="text-stone-600 dark:text-stone-400 text-sm mb-4">{section.desc}</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {section.items.map((item) => (
+            <ProjectCard
+              name={item.name}
+              desc={item.desc}
+              url={item.url}
+              source={item.source}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+</BaseLayout>

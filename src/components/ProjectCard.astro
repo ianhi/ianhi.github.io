@@ -1,0 +1,42 @@
+---
+import { ExternalLink, Github } from "@lucide/astro";
+
+interface Props {
+  name: string;
+  desc: string;
+  url: string;
+  source: string;
+}
+
+const { name, desc, url, source } = Astro.props;
+const hasLiveSite = url !== source;
+---
+
+<div class="border border-stone-200 dark:border-stone-700 rounded-lg p-4 hover:shadow-md transition-shadow flex flex-col">
+  <a href={url} target="_blank" rel="noopener" class="font-semibold text-sm">
+    {name}
+  </a>
+  <p class="text-stone-700 dark:text-stone-300 text-sm leading-relaxed mt-1.5 flex-1">
+    {desc}
+  </p>
+  <div class="flex gap-2 flex-wrap mt-3">
+    {hasLiveSite && (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs border border-stone-300 dark:border-stone-600 rounded hover:bg-stone-100 dark:hover:bg-stone-700 no-underline text-stone-700 dark:text-stone-300 transition-colors"
+      >
+        <ExternalLink class="w-3.5 h-3.5" /> Live
+      </a>
+    )}
+    <a
+      href={source}
+      target="_blank"
+      rel="noopener"
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs border border-stone-300 dark:border-stone-600 rounded hover:bg-stone-100 dark:hover:bg-stone-700 no-underline text-stone-700 dark:text-stone-300 transition-colors"
+    >
+      <Github class="w-3.5 h-3.5" /> Source
+    </a>
+  </div>
+</div>
