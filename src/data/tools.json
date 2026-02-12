@@ -2,8 +2,8 @@
   "list": [
     {
       "name": "docs-output-filter",
-      "tagline": "Filter and clean output cells in Jupyter notebooks before building docs",
-      "desc": "A Jupyter extension that lets you selectively filter output cells when building documentation. Useful for removing noisy warnings or large outputs that clutter your docs while keeping them visible during development.",
+      "tagline": "Filter noisy mkdocs/sphinx build output",
+      "desc": "Filters mkdocs or sphinx build output to show only warnings and errors with nice formatting. Cuts through the noise so you can focus on what actually needs fixing.",
       "url": "https://github.com/ianhi/docs-output-filter",
       "docs": "https://ianhuntisaak.com/docs-output-filter/"
     },
