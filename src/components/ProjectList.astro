@@ -1,0 +1,31 @@
+---
+interface Project {
+  name: string;
+  url: string;
+  desc: string;
+}
+
+interface Props {
+  title: string;
+  titleUrl?: string;
+  projects: Project[];
+}
+
+const { title, titleUrl = "https://github.com/ianhi", projects } = Astro.props;
+---
+
+<section class="mt-10">
+  <h2 class="text-xl font-semibold mb-4">
+    <a href={titleUrl} class="no-underline text-rose-brand hover:text-emerald-brand">
+      {title}
+    </a>
+  </h2>
+  <ul class="space-y-2">
+    {projects.map((p) => (
+      <li>
+        <a href={p.url} class="font-mono text-sm font-semibold">{p.name}</a>
+        <span class="text-stone-600 dark:text-stone-400">: {p.desc}</span>
+      </li>
+    ))}
+  </ul>
+</section>

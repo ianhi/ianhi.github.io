@@ -1,0 +1,36 @@
+{
+  "list": [
+    {
+      "name": "docs-output-filter",
+      "tagline": "Filter and clean output cells in Jupyter notebooks before building docs",
+      "desc": "A Jupyter extension that lets you selectively filter output cells when building documentation. Useful for removing noisy warnings or large outputs that clutter your docs while keeping them visible during development.",
+      "url": "https://github.com/ianhi/docs-output-filter",
+      "docs": "https://ianhuntisaak.com/docs-output-filter/"
+    },
+    {
+      "name": "jupyterlab-collab-mcp",
+      "tagline": "MCP server for collaborative JupyterLab editing",
+      "desc": "A JupyterLab extension that integrates Claude Code directly into your notebook workflow via the Model Context Protocol.",
+      "url": "https://github.com/ianhi/jupyterlab-collab-mcp",
+      "docs": "https://ianhuntisaak.com/jupyterlab-collab-mcp/"
+    },
+    {
+      "name": "script-bisect",
+      "tagline": "Bisect package versions to find when a bug appeared",
+      "desc": "Automates bisecting package versions in PEP 723 Python scripts using git bisect and uv. Useful for pinpointing exactly which version of a dependency introduced a bug.",
+      "url": "https://github.com/ianhi/script-bisect"
+    },
+    {
+      "name": "jlabx",
+      "tagline": "Launch JupyterLab with extensions — no install, no config",
+      "desc": "Run JupyterLab with any combination of extensions instantly using uvx. No virtualenv setup or pip install needed.",
+      "url": "https://github.com/ianhi/jlabx"
+    },
+    {
+      "name": "fdprof",
+      "tagline": "Profile open file descriptors of a running process",
+      "desc": "A utility to inspect and profile the open file descriptors of a running process. Helpful for diagnosing file descriptor leaks or understanding what files a process has open.",
+      "url": "https://github.com/ianhi/fdprof"
+    }
+  ]
+}

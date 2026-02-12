@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/700.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-rose-brand: #d44375;
+  --color-emerald-brand: #2bbc8a;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, monospace;
+}
+
+/* Base light/dark styles */
+html {
+  @apply bg-stone-50 text-stone-900 transition-colors duration-200;
+}
+html.dark {
+  @apply bg-neutral-900 text-stone-200;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-rose-brand/20;
+}
+
+/* Link defaults */
+a {
+  @apply text-rose-brand hover:text-emerald-brand transition-colors;
+}
+
+/* Code blocks */
+code {
+  @apply font-mono text-sm bg-stone-200/60 dark:bg-stone-700/60 px-1.5 py-0.5 rounded;
+}
+pre code {
+  @apply bg-transparent p-0;
+}

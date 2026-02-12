@@ -1,0 +1,78 @@
+{
+  "mpl_extensions": [
+    {
+      "name": "mpl-interactions",
+      "desc": "Sliders to control matplotlib and other interactive goodies. Works in any interactive backend and even uses ipywidgets in Jupyter.",
+      "url": "https://github.com/mpl-extensions/mpl-interactions",
+      "docs": "https://mpl-interactions.rtfd.io",
+      "stars": 142
+    },
+    {
+      "name": "mpl-point-clicker",
+      "desc": "A multiclass point clicker for matplotlib.",
+      "url": "https://github.com/mpl-extensions/mpl-point-clicker",
+      "stars": 20
+    },
+    {
+      "name": "mpl-image-labeller",
+      "desc": "Matplotlib image labeller for classifying images.",
+      "url": "https://github.com/mpl-extensions/mpl-image-labeller",
+      "docs": "https://mpl-image-labeller.rtfd.io",
+      "stars": 11
+    },
+    {
+      "name": "mpl-playback",
+      "desc": "Record and playback user interactions with matplotlib figures.",
+      "url": "https://github.com/mpl-extensions/mpl-playback",
+      "docs": "https://mpl-playback.readthedocs.io/en/latest/",
+      "stars": 4
+    },
+    {
+      "name": "mpl-arrow",
+      "desc": "Arrow plotting for matplotlib.",
+      "url": "https://github.com/mpl-extensions/mpl-arrow",
+      "stars": 4
+    },
+    {
+      "name": "mpl-image-segmenter",
+      "desc": "Interactive image segmentation with matplotlib.",
+      "url": "https://github.com/mpl-extensions/mpl-image-segmenter",
+      "docs": "https://mpl-image-segmenter.rtfd.io",
+      "stars": 3
+    },
+    {
+      "name": "mpl-pan-zoom",
+      "desc": "Zooming and panning for matplotlib plots.",
+      "url": "https://github.com/mpl-extensions/mpl-pan-zoom",
+      "docs": "https://mpl-pan-zoom.rtfd.io",
+      "stars": 2
+    },
+    {
+      "name": "mpl-draggable-line",
+      "desc": "A draggable line widget for matplotlib.",
+      "url": "https://github.com/mpl-extensions/mpl-draggable-line",
+      "stars": 1
+    }
+  ],
+  "other": [
+    {
+      "name": "jupyterlab-vimrc",
+      "desc": "Add a basic vimrc to JupyterLab vim.",
+      "url": "https://github.com/ianhi/jupyterlab-vimrc",
+      "stars": 68
+    },
+    {
+      "name": "xarray-ome",
+      "desc": "Load OME-Zarr files in xarray.",
+      "url": "https://github.com/ianhi/xarray-ome",
+      "docs": "https://xarray-ome.readthedocs.io/en/latest/",
+      "stars": 8
+    },
+    {
+      "name": "microutil",
+      "desc": "A library for analyzing microscopy datasets.",
+      "url": "https://github.com/Hekstra-Lab/microutil",
+      "stars": 0
+    }
+  ]
+}

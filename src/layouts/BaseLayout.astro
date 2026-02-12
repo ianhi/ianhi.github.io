@@ -1,0 +1,54 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  prose?: boolean;
+}
+
+const {
+  title = "Ian Hunt-Isaak",
+  description = "Personal site of Ian Hunt-Isaak",
+  prose = false,
+} = Astro.props;
+
+const fullTitle = title === "Ian Hunt-Isaak" ? title : `${title} · Ian Hunt-Isaak`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{fullTitle}</title>
+    <!-- Prevent FOUC: apply dark class before first paint -->
+    <script is:inline>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        if (
+          stored === "dark" ||
+          (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Header />
+    <main
+      class:list={[
+        "flex-1 w-full max-w-4xl mx-auto px-6 py-10",
+        prose && "prose prose-stone dark:prose-invert prose-a:text-rose-brand hover:prose-a:text-emerald-brand",
+      ]}
+    >
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

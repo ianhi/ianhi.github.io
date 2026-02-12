@@ -1,0 +1,96 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Libraries", href: "/libraries/" },
+  { name: "Tools", href: "/tools/" },
+  { name: "Contact", href: "/contact/" },
+  { name: "CV", href: "/CV.pdf" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header
+  class="sticky top-0 z-50 backdrop-blur bg-stone-50/80 dark:bg-neutral-900/80 border-b border-stone-200 dark:border-stone-700"
+>
+  <div class="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
+    <!-- Left: name -->
+    <a href="/" class="flex items-center gap-3 no-underline">
+      <img
+        src="/images/logo.jpg"
+        alt="Ian Hunt-Isaak"
+        class="w-8 h-8 rounded-full"
+      />
+      <span class="font-semibold text-stone-900 dark:text-stone-100 hidden sm:inline">
+        Ian Hunt-Isaak
+      </span>
+    </a>
+
+    <!-- Right: nav + toggle (desktop) -->
+    <div class="hidden sm:flex items-center gap-6">
+      <nav class="flex items-center gap-4 text-sm">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "no-underline hover:text-emerald-brand",
+              currentPath === link.href
+                ? "text-rose-brand font-medium"
+                : "text-stone-600 dark:text-stone-400",
+            ]}
+          >
+            {link.name}
+          </a>
+        ))}
+      </nav>
+      <ThemeToggle />
+    </div>
+
+    <!-- Mobile: toggle + hamburger -->
+    <div class="flex sm:hidden items-center gap-3">
+      <ThemeToggle />
+      <button
+        id="menu-toggle"
+        class="text-stone-600 dark:text-stone-400 hover:text-rose-brand"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav drawer -->
+  <nav
+    id="mobile-nav"
+    class="hidden sm:hidden border-t border-stone-200 dark:border-stone-700 px-6 py-3"
+  >
+    {navLinks.map((link) => (
+      <a
+        href={link.href}
+        class:list={[
+          "block py-2 text-sm no-underline hover:text-emerald-brand",
+          currentPath === link.href
+            ? "text-rose-brand font-medium"
+            : "text-stone-600 dark:text-stone-400",
+        ]}
+      >
+        {link.name}
+      </a>
+    ))}
+  </nav>
+</header>
+
+<script is:inline>
+  document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.toggle("hidden");
+  });
+</script>

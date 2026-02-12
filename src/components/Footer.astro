@@ -1,0 +1,18 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer
+  class="border-t border-stone-200 dark:border-stone-700 py-6 text-center text-sm text-stone-500 dark:text-stone-400"
+>
+  <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <span>&copy; {year} Ian Hunt-Isaak</span>
+    <nav class="flex gap-4">
+      <a href="/" class="hover:text-emerald-brand no-underline text-stone-500 dark:text-stone-400">Home</a>
+      <a href="/libraries/" class="hover:text-emerald-brand no-underline text-stone-500 dark:text-stone-400">Libraries</a>
+      <a href="/tools/" class="hover:text-emerald-brand no-underline text-stone-500 dark:text-stone-400">Tools</a>
+      <a href="/contact/" class="hover:text-emerald-brand no-underline text-stone-500 dark:text-stone-400">Contact</a>
+      <a href="/CV.pdf" class="hover:text-emerald-brand no-underline text-stone-500 dark:text-stone-400">CV</a>
+    </nav>
+  </div>
+</footer>

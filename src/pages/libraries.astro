@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LibraryCard from "../components/LibraryCard.astro";
+import libraries from "../data/libraries.json";
+---
+
+<BaseLayout title="Libraries">
+  <section>
+    <h1 class="text-2xl font-semibold text-rose-brand mb-6">Libraries</h1>
+
+    <div class="mb-10">
+      <h2 class="text-lg font-semibold mb-1">
+        <a href="https://github.com/mpl-extensions" target="_blank" rel="noopener">
+          mpl-extensions
+        </a>
+      </h2>
+      <p class="text-stone-600 dark:text-stone-400 text-sm mb-4">
+        An ecosystem of matplotlib extension libraries I created and maintain.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {libraries.mpl_extensions.map((lib) => (
+          <LibraryCard
+            name={lib.name}
+            desc={lib.desc}
+            url={lib.url}
+            docs={lib.docs}
+            stars={lib.stars}
+          />
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-semibold mb-1">Other Libraries</h2>
+      <p class="text-stone-600 dark:text-stone-400 text-sm mb-4">
+        JupyterLab extensions, Jupyter widgets, and other packages.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {libraries.other.map((lib) => (
+          <LibraryCard
+            name={lib.name}
+            desc={lib.desc}
+            url={lib.url}
+            docs={lib.docs}
+            stars={lib.stars}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

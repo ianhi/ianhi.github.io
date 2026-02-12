@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import ProjectList from "../components/ProjectList.astro";
+import projects from "../data/projects.json";
+import contributions from "../data/contributions.json";
+---
+
+<BaseLayout>
+  <section id="about">
+    <p>
+      I am a Ph.D. candidate in Applied Physics at Harvard University in the
+      Hekstra lab. For my graduate research I am studying how heterogeneity
+      develops in populations of yeast when exposed to environmental stressors.
+      As part of that work I have developed Python code to control a custom
+      microscope and laser setup in order to automate the highthroughput
+      collection of single cell raman spectra in concert with traditional
+      microscopy. I have also been developing a state of the art microscopy
+      data analysis pipeline for segmenting, tracking, and analyzing cells
+      over a time series of images.
+    </p>
+    <p class="mt-4">
+      I have also taught several
+      <a href="https://github.com/Hekstra-Lab/scientific-python-bootcamp">
+        Scientific python bootcamps
+      </a>
+      for undergraduates as well as
+      <a href="https://github.com/Hekstra-Lab/nesm-python">a workshop</a>
+      for the New England Society of Microscopy.
+    </p>
+    <p class="mt-4">
+      In my spare time I enjoy gardening, fixing bikes, and running. I also
+      contribute to several open source Python projects which you can read
+      about below.
+    </p>
+
+    <div class="mt-4">
+      <SocialLinks />
+    </div>
+  </section>
+
+  <ProjectList title="Projects" projects={projects.list} />
+  <ProjectList title="Open Source Work" projects={contributions.list} />
+</BaseLayout>

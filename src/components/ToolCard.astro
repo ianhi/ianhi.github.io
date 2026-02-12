@@ -1,0 +1,41 @@
+---
+import { Github, BookOpen } from "@lucide/astro";
+
+interface Props {
+  name: string;
+  tagline: string;
+  desc: string;
+  url: string;
+  docs?: string;
+}
+
+const { name, tagline, desc, url, docs } = Astro.props;
+---
+
+<div class="border border-stone-200 dark:border-stone-700 rounded-lg p-4 hover:shadow-md transition-shadow">
+  <a href={docs || url} target="_blank" rel="noopener" class="font-mono font-semibold text-sm">{name}</a>
+  <p class="text-stone-500 dark:text-stone-400 text-sm mt-0.5">{tagline}</p>
+  <p class="text-stone-700 dark:text-stone-300 text-sm leading-relaxed mt-2">
+    {desc}
+  </p>
+  <div class="flex gap-2 flex-wrap mt-3">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener"
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs border border-stone-300 dark:border-stone-600 rounded hover:bg-stone-100 dark:hover:bg-stone-700 no-underline text-stone-700 dark:text-stone-300 transition-colors"
+    >
+      <Github class="w-3.5 h-3.5" /> GitHub
+    </a>
+    {docs && (
+      <a
+        href={docs}
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs border border-stone-300 dark:border-stone-600 rounded hover:bg-stone-100 dark:hover:bg-stone-700 no-underline text-stone-700 dark:text-stone-300 transition-colors"
+      >
+        <BookOpen class="w-3.5 h-3.5" /> Docs
+      </a>
+    )}
+  </div>
+</div>
