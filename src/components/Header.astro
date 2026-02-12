@@ -36,9 +36,9 @@ const currentPath = Astro.url.pathname;
           <a
             href={link.href}
             class:list={[
-              "no-underline hover:text-emerald-brand",
+              "no-underline hover:text-accent",
               currentPath === link.href
-                ? "text-rose-brand font-medium"
+                ? "text-primary font-medium"
                 : "text-stone-600 dark:text-stone-400",
             ]}
           >
@@ -54,7 +54,7 @@ const currentPath = Astro.url.pathname;
       <ThemeToggle />
       <button
         id="menu-toggle"
-        class="text-stone-600 dark:text-stone-400 hover:text-rose-brand"
+        class="text-stone-600 dark:text-stone-400 hover:text-primary"
         aria-label="Toggle menu"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,9 +78,9 @@ const currentPath = Astro.url.pathname;
       <a
         href={link.href}
         class:list={[
-          "block py-2 text-sm no-underline hover:text-emerald-brand",
+          "block py-2 text-sm no-underline hover:text-accent",
           currentPath === link.href
-            ? "text-rose-brand font-medium"
+            ? "text-primary font-medium"
             : "text-stone-600 dark:text-stone-400",
         ]}
       >

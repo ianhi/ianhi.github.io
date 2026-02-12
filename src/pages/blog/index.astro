@@ -9,7 +9,7 @@ const posts = (await getCollection("blog", ({ data }) => !data.draft))
 
 <BaseLayout title="Blog">
   <section>
-    <h1 class="text-2xl font-semibold text-rose-brand mb-6">Blog</h1>
+    <h1 class="text-2xl font-semibold text-primary mb-6">Blog</h1>
     <PostList posts={posts} />
   </section>
 </BaseLayout>

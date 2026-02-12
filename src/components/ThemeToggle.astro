@@ -3,20 +3,10 @@ import { Sun, Moon } from "@lucide/astro";
 ---
 
 <button
-  id="theme-toggle"
-  class="p-1.5 rounded-md text-stone-600 dark:text-stone-400 hover:text-rose-brand hover:bg-stone-200/50 dark:hover:bg-stone-700/50 transition-colors"
+  class="theme-toggle p-1.5 rounded-md text-stone-600 dark:text-stone-400 hover:text-primary hover:bg-stone-200/50 dark:hover:bg-stone-700/50 transition-colors"
   aria-label="Toggle dark mode"
+  onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light')"
 >
   <Sun class="w-4 h-4 hidden dark:block" />
   <Moon class="w-4 h-4 block dark:hidden" />
 </button>
-
-<script is:inline>
-  document.querySelectorAll("#theme-toggle").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const html = document.documentElement;
-      const isDark = html.classList.toggle("dark");
-      localStorage.setItem("theme", isDark ? "dark" : "light");
-    });
-  });
-</script>

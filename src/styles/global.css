@@ -6,8 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-rose-brand: #d44375;
-  --color-emerald-brand: #2bbc8a;
+  --color-primary: #1e7a50;
+  --color-accent: #d4a03c;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, monospace;
 }
@@ -17,17 +17,18 @@ html {
   @apply bg-stone-50 text-stone-900 transition-colors duration-200;
 }
 html.dark {
+  --color-primary: #2f9e6e;
   @apply bg-neutral-900 text-stone-200;
 }
 
 /* Selection color */
 ::selection {
-  @apply bg-rose-brand/20;
+  @apply bg-primary/20;
 }
 
 /* Link defaults */
 a {
-  @apply text-rose-brand hover:text-emerald-brand transition-colors;
+  @apply text-primary hover:text-accent transition-colors;
 }
 
 /* Code blocks */
