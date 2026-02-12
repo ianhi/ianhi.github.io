@@ -10,7 +10,7 @@
     {
       "name": "jupyterlab-collab-mcp",
       "tagline": "MCP server for collaborative JupyterLab editing",
-      "desc": "A JupyterLab extension that integrates Claude Code directly into your notebook workflow via the Model Context Protocol.",
+      "desc": "A full-featured MCP server for JupyterLab notebook collaboration, with many context-preserving optimizations for agent usage. Not a JupyterLab extension — works with any MCP client.",
       "url": "https://github.com/ianhi/jupyterlab-collab-mcp",
       "docs": "https://ianhuntisaak.com/jupyterlab-collab-mcp/"
     },
