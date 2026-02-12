@@ -28,6 +28,12 @@
       "docs": "https://ianhuntisaak.com/jlabx/"
     },
     {
+      "name": "third-wheel",
+      "tagline": "Rename Python wheels for multi-version installation",
+      "desc": "Rename Python wheel packages so you can install multiple versions of the same package in a single environment. Useful for regression testing across library versions.",
+      "url": "https://github.com/earth-mover/third-wheel"
+    },
+    {
       "name": "fdprof",
       "tagline": "Profile open file descriptors of a running process",
       "desc": "A utility to inspect and profile the open file descriptors of a running process. Helpful for diagnosing file descriptor leaks or understanding what files a process has open.",
