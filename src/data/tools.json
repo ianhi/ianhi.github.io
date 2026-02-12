@@ -24,7 +24,8 @@
       "name": "jlabx",
       "tagline": "Launch JupyterLab with extensions — no install, no config",
       "desc": "Run JupyterLab with any combination of extensions instantly using uvx. No virtualenv setup or pip install needed.",
-      "url": "https://github.com/ianhi/jlabx"
+      "url": "https://github.com/ianhi/jlabx",
+      "docs": "https://ianhuntisaak.com/jlabx/"
     },
     {
       "name": "fdprof",
